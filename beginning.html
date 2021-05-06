@@ -6,101 +6,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/baseline_pageview_white_24dp.png">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
-
-<body>
-    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand h1" href="index.html">
-                <img src="assets/img/baseline_pageview_black_24dp.png">
-                <span class="titre">
-                <span class="text-dark h4">Web</span> <span class="text-primary h4">Dev</span>
-                </span>
-            </a>
-
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
-                <div class="flex-fill mx-xl-5 mb-2">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="beginning.html">Beginning</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="growth.html">Growth</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="dev.html">Dev</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="aboutus.html">About us</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
+<body style="margin: 0;">
+    <div class ="gridcontainer">
+    <nav class="nav">
+        <div class="titre">
+            <img src="assets/img/baseline_pageview_black_24dp.png">
+            <span class="text-primary" style="margin-right: 5px;">Web</span> <span class="text-dark"> Dev</span>
         </div>
+        <button class="nav-item"  style="grid-column: 4;"  onclick="location.href='index.html'"">Home</button>
+        <button class="nav-item"  style="grid-column: 5;"  onclick="location.href='beginning.html'"">Beginning</button>
+        <button class="nav-item"  style="grid-column: 6;"  onclick="location.href='growth.html'"">Growth</button>
+        <button class="nav-item"  style="grid-column: 7;"  onclick="location.href='dev.html'"">Dev</button>
+        <button class="nav-item"  style="grid-column: 8;"  onclick="location.href='aboutus.html'"">About us</button>
     </nav>
-    <section class="bg-light py-5">
-        <div class="feature-work container my-4">
-            <div class="row d-flex d-flex align-items-center">
-                <div class="col-lg-5">
-                    <h3 class="feature-work-title h4 text-muted light-300">How it all started</h3>
-                    <h1 class="feature-work-heading h2 py-3 semi-bold-600 text-primary">The beginning</h1>
-                    <p class="feature-work-body text-muted light-300">
-                        Web first was born when a scientist called <a class="text-primary">Tim Berners-Lee</a>  , needed a way to share information between all the scientists working at
-                        CERN (Centre Europien des Recherches Nucléaires) and who were typically working from over 100 countries.The basic idea of web was about creating a giant
-                        network to become a global information system.
+    <div class="content">
+        <div class="begincontent">
+            
+            <p class="beginpara text-dark">
+                <a class="beginparatitle"> The beginning : </a><br> <br> 
+                Web first was born when a scientist called <a class="text-primary"> Tim Berners-Lee </a> , needed a way to share information between all the scientists working at CERN (Centre Europien des Recherches Nucléaires) and who were typically working from over 100 countries.The basic idea of web was about creating a giant network to become a global information system.
+                His first proposal was in 1989 and then again in 1990 with a Systems Engineer <a class="text-primary">Robert Cailiau</a>.This proposal basically talked about a huge "HyperText Project" called "World Wide Web" as in a giant web of "HyperText Documents" that can be viewed by browsers.He started his very own Web Server that year at CERN.Funnily , the computer has a label on it that said : "This machine is a server. DO NOT POWER IT DOWN!!"
+            </p>
 
-                    </p>
-                    <p class="feature-work-footer text-muted light-300">
-                        His first proposal was in 1989 and then again in 1990 with a Systems Engineer <a class="text-primary">Robert Cailiau</a>.This proposal basically talked about a huge 
-                        "HyperText Project" called "World Wide Web" as in a giant web of "HyperText Documents" that can be viewed by browsers.He started his very own Web Server
-                        that year at CERN.Funnily , the computer has a label on it that said : "This machine is a server. DO NOT POWER IT DOWN!!"
-                    </p>
-                </div>
-                <div class="col-lg-6 offset-lg-1 align-left">
-                    <div class="row">
-                        <a class="col" data-type="image" data-fslightbox="gallery">
-                            <img class="img-fluid" src="./assets/img/Ordinateur.jpg">
-                        </a>
-                        <a class="col" data-type="image" data-fslightbox="gallery">
-                            <img class="img-fluid" src="./assets/img/Robert-Cailliau.jpg">
-                        </a>
-                    </div>
-                    <div class="row pt-4">
-                        <a class="col" data-type="image" data-fslightbox="gallery">
-                            <img class="img-fluid" src="./assets/img/CERN.jpg">
-                        </a>
-                        <a class="col" data-type="image" data-fslightbox="gallery">
-                            <img class="img-fluid" src="./assets/img/tim-berners-lee-img.jpg">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</body>
-<footer>
-    <div class="w-100 bg-primary py-3 footer-container"" >
-        <div class="container">
-            <div class="row pt-2">
-                <div class="col-lg-6 col-sm-12">
-                    <p class="text-lg-start text-center text-light light-300">
-                        Created by Amine Braham for Web Dev Class 2020-2021 bra.ami20@hotmail.fr
-
-                    </p>
-                </div>
-
-            </div>
+            <a class="beginimg1">
+                <img  src="./assets/img/Ordinateur.jpg" style="max-width: 100%;max-height: 100%;">
+            </a>
+            <a class="beginimg2">
+                <img  src="./assets/img/Robert-Cailliau.jpg" style="max-width: 100%;max-height: 100%;">
+            </a>
+            <a class="beginimg3">
+                <img  src="./assets/img/CERN.jpg" style="max-width: 100%;max-height: 100%;">
+            </a>
+            <a class="beginimg4">
+                <img  src="./assets/img/tim-berners-lee-img.jpg" style="max-width: 100%;max-height: 100%;">
+            </a>
         </div>
     </div>
-</footer>
-</html>
+    <footer class="footer">
+        <a>Created by Amine Braham for Web Dev class 2021</a>
+        <br>
+        <a>bra.ami20@hotmail.fr</a>
+    </footer>
+    </div>
+</body>

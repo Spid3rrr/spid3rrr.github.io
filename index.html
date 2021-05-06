@@ -2,128 +2,125 @@
 <html lang="en">
 
 <head>
-    <title>Web Dev</title>
+    <title>Web Dev - Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/baseline_pageview_white_24dp.png">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
+    
 </head>
-
-<body>
-    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand h1" href="index.html">
-                <img src="assets/img/baseline_pageview_black_24dp.png">
-                <span class="titre">
-                <span class="text-dark h4">Web</span> <span class="text-primary h4">Dev</span>
-                </span>
-            </a>
-
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
-                <div class="flex-fill mx-xl-5 mb-2">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="beginning.html">Beginning</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="growth.html">Growth</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="dev.html">Dev</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="aboutus.html">About us</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
+<body style="margin: 0;">
+    <div class ="gridcontainer">
+    <nav class="nav">
+        <div class="titre">
+            <img src="assets/img/baseline_pageview_black_24dp.png">
+            <span class="text-primary" style="margin-right: 5px;">Web</span> <span class="text-dark"> Dev</span>
         </div>
+        <button class="nav-item"  style="grid-column: 4;"  onclick="location.href='index.html'"">Home</button>
+        <button class="nav-item"  style="grid-column: 5;"  onclick="location.href='beginning.html'"">Beginning</button>
+        <button class="nav-item"  style="grid-column: 6;"  onclick="location.href='growth.html'"">Growth</button>
+        <button class="nav-item"  style="grid-column: 7;"  onclick="location.href='dev.html'"">Dev</button>
+        <button class="nav-item"  style="grid-column: 8;"  onclick="location.href='aboutus.html'"">About us</button>
     </nav>
-<section class="bg-light w-100">
-    <div class="container">
-        <div class="row d-flex align-items-center py-5">
-            <div class="col-lg-6 text-start">
-                <h1 class="h2 py-5 text-primary typo-space-line">What is Web Dev ?</h1>
-                <p class="light-300">
-                    Welcome ! In this website we are going to take you through an introduction to what web dev is , and whar are some of the most used technologies on the market for it today !
-                </p>
-            </div>
-            <div class="col-lg-6">
+    <div class="content">
+        <div class="homecontent">
+            <div class="home-first">
+                <a class="homef-title">What is Web Dev ?</a>
+                <a class="homef-para">Welcome ! In this website we are going to take you through an introduction to what web dev is , and whar are some of the most used technologies on the market for it today !</a>
+                <a class="homef-img">
                 <img
-                class="webdevimg" 
+                style="
+                max-width:100%;
+                max-height:100%;
+                ";
                 src="./assets/img/web-dev-img.jpeg"
                 >
+                </a>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="container py-5">
-    <div class="pt-5 pb-3 d-lg-flex align-items-center gx-5">
-
-        <div class="col-lg-3">
-            <h2 class="h2 py-5 typo-space-line">Our Elements !</h2>
-            <p class="text-muted light-300">
+            <div class="home-second">
+                <a class="homes-para">
                 We are going to first talk about how Web surfing first appeared , then talk about how fast it grew in the world , and finally what are the most used frameworks used to develop it today !
-            </p>
-        </div>
+                 </a> 
+                <a href="beginning.html" class="homes-icon" style="grid-column:2;">
+                    <img 
+                    class="homes-icon"
+                    src="./assets/img/web-element-img.jpg"
+                    >
+                    <a href="beginning.html"
+                    class="text-primary" 
+                    style="grid-column: 2;
+                    grid-row: 2;
+                    text-align: center;
+                    margin-right: 50px;
+                    ">
+                     The Beginning </a>
+                    <a class="text-dark" 
+                    style="grid-column: 2;
+                    grid-row: 2;
+                    text-align: center;
+                    margin-right: 50px;
+                    margin-top: 30px;
+                    ">
+                     How it all started </a>
+                </a>
+                <a 
+                href="growth.html"
+                class="homes-icon" style="grid-column:3;grid-row: 1;">
+                    <img 
+                    class="homes-icon"
+                    src="./assets/img/web-growth-img.jpg"
+                    >
+                    <a 
+                    href="growth.html"
+                    class="text-primary" 
+                    style="grid-column: 3;
+                    grid-row: 2;
+                    text-align: center;
+                    margin-right: 50px;
+                    ">
+                     The Growth </a>
+                    <a class="text-dark" 
+                    style="grid-column: 3;
+                    grid-row: 2;
+                    text-align: center;
+                    margin-right: 50px;
+                    margin-top: 30px;
+                    ">
+                     How it invaded our lives </a>
+                </a>
+                <a class="homes-icon" style="grid-column:4;grid-row: 1;" href="dev.html" >
+                    <img 
+                    class="homes-icon"
+                    src="./assets/img/web-angular-img.png"
+                    >
+                    <a href="dev.html" 
+                    class="text-primary" 
+                    style="grid-column: 4;
+                    grid-row: 2;
+                    text-align: center;
+                    margin-right: 50px;
+                    ">
+                     The Development </a>
+                    <a class="text-dark" 
+                    style="grid-column: 4;
+                    grid-row: 2;
+                    text-align: center;
+                    margin-right: 50px;
+                    margin-top: 30px;
+                    ">
+                     How are we doing this ? </a>
+                </a>
 
-        <div class="col-lg-9 row">
-            <div class="col-md-4">
-                <a href="beginning.html" >
-                <img class=" img-fluid rounded-circle p-4" src="./assets/img/web-element-img.jpg" href="beginning.html">
-                </a>
-                <ul class="list-unstyled text-center pt-4 text-muted light-300">
-                    <a href="beginning.html" style="text-decoration: none;" ><li class="element-title">The beginning</li></a>
-                    <li>How it all started</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <a href="growth.html" >
-                <img class=" img-fluid rounded-circle p-4" src="./assets/img/web-growth-img.jpg" >
-                </a>
-                <ul class="list-unstyled text-center pt-4 text-muted light-300">
-                    <a href="growth.html" style="text-decoration: none;" > <li class="element-title">The growth</li> </a>
-                    <li>How web invaded our lives</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <a href="dev.html" >
-                <img class=" img-fluid rounded-circle p-4" src="./assets/img/web-angular-img.png" href="beginning.html">
-                </a>
-                <ul class="list-unstyled text-center pt-4 text-muted light-300">
-                    <a href="dev.html" style="text-decoration: none;" ><li class="element-title">The development</li></a>
-                    <li>How are we doing this ?</li>
-                </ul>
             </div>
         </div>
-
+        
     </div>
-</section>
-
+    <footer class="footer">
+        <a>Created by Amine Braham for Web Dev class 2021</a>
+        <br>
+        <a>bra.ami20@hotmail.fr</a>
+    </footer>
+    </div>
 </body>
-<footer>
-    <div class="w-100 bg-primary py-3 footer-container"" >
-        <div class="container">
-            <div class="row pt-2">
-                <div class="col-lg-6 col-sm-12">
-                    <p class="text-lg-start text-center text-light light-300">
-                        Created by Amine Braham for Web Dev Class 2020-2021 bra.ami20@hotmail.fr
-
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</footer>
-
-</html>
