@@ -93,6 +93,7 @@
     "title img"
     "para img";
 }
+
 .homef-title{
     grid-area: title;
     color: #00B7FF;
@@ -229,4 +230,73 @@ form input{
     background-color: #a1ffac;
     padding: 20px;
     border-radius: 16px
+}
+@media screen and (max-width : 768px) {
+    .home-first{
+        grid-area: first;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "title para"
+        "img img";
+    }
+    .home-second{
+        grid-area: second;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 5% 5% auto;
+        column-gap: 30px;
+        row-gap:5px
+    }
+    .homes-icon{
+        border-radius: 50%;
+        max-width:80%;
+        max-height:80%;
+        grid-row: 1;
+    }
+    .begincontent{
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 50% 25% 25%;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .beginpara{
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .beginparatitle{
+        text-align: center;
+        font-size: 35px;
+        color: #00B7FF;
+    }
+    .beginimg1{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .beginimg2{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .beginimg3{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .beginimg4{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .growpara{
+        font-family: 'Open Sans', sans-serif;
+        color: #424554;
+        font-weight: bold;
+        text-decoration:none;
+        padding: 0px 50px;
+        margin-bottom: 30px;
+    }
+    .growimg{
+        padding: 0px 50px;
+    }
+
 }
